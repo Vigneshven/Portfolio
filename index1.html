@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/2ecf647875.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"></div>
+             <p><span>WEB DEVELOPER</span></p>
+             <h1>Hi, I'm <span class="name">VIGNESH</span><br>from Vellore</h1>
+
+
+    </div>
+
+</div>
+<!---------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Enthusiastic and motivated recent graduate with a
+                    Bachelor's degree in Information Technology. Eager to
+                    leverage academic background in software developer to
+                    contribute effectively to the company. Possess strong
+                    problem-solving skills, attention to detail, and a
+                    collaborative mindset. Proven ability to adapt quickly to
+                    new environments and learn new technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Education') ">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('Activities')">Activities</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C</span>(Intermediate)</li>
+                            <li><span>C++</span>(Intermediate)</li>
+                            <li><span>HTML</span>(Intermediate)</li>
+                            <li><span>CSS</span>(Intermediate)</li>
+                            <li><span>PYTHON</span>(Beginner)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Bachelor of Technology Information
+                                Technology<br>Kingston Engineering College<br>8.5 CGPA</li>
+                            <li><span>2020</span><br>Higher Secondary Certificate<br>N Krishnaswamy Mudaliar Higher
+                                Secondary School<br>72%</li>
+                            <li><span>2018</span>,br>Secondary School Leaving Certificate<br>N Krishnaswamy Mudaliar Higher
+                                Secondary School<br>89%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Activities">
+                        <ul>
+                            <li><span>2023</span><br>ICCIEEE<br>
+                                INTERNATIONAL CONFERENCE ON
+                                COMPUTING INFORMATION ELECTRONICS
+                                AND ELECTRICAL ENGINEERING</li>
+                            <li><span>2023</span><br>PROJECT EXPO</li>
+                            
+                        </ul>
+                    </div>
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<!------------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Designing and building responsive websites using HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Designing user interfaces (UI) for websites and web applications.Improving user experience (UX) through intuitive navigation and accessible design.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-object-group"></i>
+                <h2>Graphic Design</h2>
+                <p>Designing logos, branding materials, business cards, and marketing collateral.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------project-------------------->
+<div class="project">
+    <div class="container">
+        <div id="project">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/imagesal.jpg">
+                <div class="layer">
+                    <h3>Alzheimer's Disease Prediction</h3>
+                    <p>It involves developing algorithms that analyze various data sources to detect patterns indicative of the onset or progression of Alzheimer's disease, aiding in early diagnosis and treatment.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/doc1.jpg">
+                <div class="layer">
+                    <h3>Simple Calculator using Python</h3>
+                    <p></p>It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+                </p>
+                    <a href="https://github.com/Vigneshven/cod_soft/blob/main/tasks/task1-todolist/calculator.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/docs.jpg">
+                <div class="layer">
+                    <h3>Password Generator using Python</h3>
+                    <p>It generates random passwords based on specified criteria, such as length and character types, to enhance security and create strong, unique passwords for users.</p>
+                    <a href="https://github.com/Vigneshven/cod_soft/blob/main/tasks/task1-todolist/password%20generator.py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+</div>
+<!--------------------contact----------->
+<div class="contact">
+    <div class="container">
+        <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>v.vignesh15109038@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9677774066</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vignesh-v-a10211267/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Vigneshven"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/vickyvics_offical/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/VigneshResume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> 2024 by VIGNESH </p>
+    </div>
+</div>
+
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-links");
+    }
+    for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+    }
+
+    // Activate the selected tab
+    document.getElementById(tabname).classList.add("active-tab");
+    // Highlight the corresponding tab link
+    event.currentTarget.classList.add("active-links");
+}
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";  
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";  
+    }
+ 
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby39G3XKiH7d3ESH87kv9h2ysd-3FsErUy7r-B_AqC9k51B0Bx30ZVLyhOMF6LIu-et/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
