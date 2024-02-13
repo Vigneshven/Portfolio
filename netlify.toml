@@ -1,5 +1,0 @@
-[[redirects]]
-from ="/*"
-to = "/index1.html"
-to = "/style1.css"
-status = 200
