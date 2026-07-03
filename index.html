@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vignesh V | Software Engineer & Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Vignesh V, a Software Engineer specialized in Java, Spring Boot, React.js, and Full-Stack Web Development."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">VIGNESH<span>.V</span></a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle Theme" class="btn-icon">
+            <svg
+              class="sun-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+      <div class="hero-bg-animation"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="fade-in">
+            Hi, I'm <span class="text-gradient">Vignesh V</span>
+          </h1>
+          <h2 class="slide-up">
+            I am a <span id="typing-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="fade-in">
+            Software Engineer with a proven track record of constructing
+            high-performing web ecosystems. Specialized in building responsive
+            user interfaces with React.js and writing reliable, scalable RESTful
+            API backends with Java and Spring Boot.
+          </p>
+          <div class="hero-buttons fade-in">
+            <a href="mailto:v.vignesh15109038@gmail.com" class="btn btn-primary"
+              >Contact Me</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1tNKWpk1zyl34vJkjyMlfvhM-fJsmsJ9t/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-secondary"
+              >Download Resume</a
+            >
+          </div>
+          <div class="social-links fade-in">
+            <a
+              href="https://www.linkedin.com/in/vigneshvengestan"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.94 3.75a1.56 1.56 0 1 0 0 3.12 1.56 1.56 0 0 0 0-3.12ZM4.75 8.5h4.38v10.75H4.75Zm6.56 0h4.2v1.47h.06c.58-1.1 2-2.27 4.13-2.27 4.42 0 5.24 2.9 5.24 6.68V19.25h-4.38v-8.9c0-2.12-.04-4.84-2.95-4.84-2.96 0-3.41 2.31-3.41 4.69v9.05H11.31Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Vigneshven"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.92.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.11-.74.4-1.24.73-1.53-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.44-2.71 5.42-5.29 5.7.41.35.77 1.04.77 2.1 0 1.52-.01 2.75-.01 3.12 0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://leetcode.com/u/VIGNESHV3/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LeetCode"
+              title="LeetCode"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.7 2.3a1 1 0 0 1 1.4 0l6.6 6.6a1 1 0 0 1 0 1.4l-6.6 6.6a1 1 0 0 1-1.4-1.4L19.58 10 13.7 4.1a1 1 0 0 1 0-1.8Zm-3.4 0a1 1 0 0 0-1.4 0l-6.6 6.6a1 1 0 0 0 0 1.4l6.6 6.6a1 1 0 0 0 1.4-1.4L4.42 10 10.3 4.1a1 1 0 0 0 0-1.8Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-container fade-in">
+          <div class="profile-placeholder">
+            <span>VV</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about-section section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text card-glass scroll-animate">
+            <h3>Architecting Modern Web Solutions</h3>
+            <p>
+              I am driven by a deep passion for clean-code mechanics, software
+              engineering, and strategic problem-solving. My architecture
+              methodologies emphasize developing fluidly responsive frontend
+              systems seamlessly married to secure, performant database
+              backends.
+            </p>
+            <p>
+              With structured exposure to high-visibility project requirements
+              and continuous agile testing, I translate business challenges into
+              reliable digital realities. I enjoy learning and keeping step with
+              modern frameworks to constantly improve my craft.
+            </p>
+          </div>
+          <div class="achievements-grid">
+            <div class="counter-card card-glass scroll-animate">
+              <span class="counter" data-target="6">0</span><span>+</span>
+              <p>Months Experience</p>
+            </div>
+            <div class="counter-card card-glass scroll-animate">
+              <span class="counter" data-target="1">0</span>
+              <p>Meta Client Contribution</p>
+            </div>
+            <div class="counter-card card-glass scroll-animate">
+              <span class="counter" data-target="30">0</span><span>%</span>
+              <p>UI Defect Reduction</p>
+            </div>
+            <div class="counter-card card-glass scroll-animate">
+              <span class="counter" data-target="20">0</span><span>%</span>
+              <p>Performance Boost</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience-section section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item left scroll-animate">
+            <div class="timeline-content card-glass">
+              <span class="timeline-date">Nov 2025 - Apr 2026</span>
+              <h3>Software Engineer I</h3>
+              <h4>ZeeSoft Solution Pvt Ltd — Chennai, India</h4>
+              <div class="badge-meta">Contingent Worker for Meta</div>
+              <ul class="experience-bullets">
+                <li>
+                  <strong>Component Engineering:</strong> Developed reusable
+                  React.js components and built clean frontend features,
+                  boosting application modularity.
+                </li>
+                <li>
+                  <strong>System Stability:</strong> Systematically investigated
+                  complex functional bugs, decreasing recurring user interface
+                  defects by roughly 30%.
+                </li>
+                <li>
+                  <strong>Meta Project Impact:</strong> Authored extensive
+                  frontend logic variations and structural unit tests to
+                  guarantee web scaling capabilities for Meta assignments.
+                </li>
+                <li>
+                  <strong>Performance Optimization:</strong> Elevated
+                  operational app responsiveness thresholds by nearly 20%
+                  through component rendering optimizations.
+                </li>
+                <li>
+                  <strong>Agile Workflows:</strong> Collaborated via standard
+                  Git-based workflows alongside cross-functional engineers to
+                  maintain peer-reviewed production lifecycles.
+                </li>
+              </ul>
+              <div class="tech-tags">
+                <span>React.js</span><span>JavaScript</span><span>HTML5</span
+                ><span>CSS3</span><span>Git</span><span>Unit Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-category card-glass scroll-animate">
+            <h3>Languages & Databases</h3>
+            <div class="tech-tags">
+              <span>Java</span><span>JavaScript</span><span>SQL (MySQL)</span
+              ><span>Oracle SQL</span>
+            </div>
+          </div>
+          <div class="skills-category card-glass scroll-animate">
+            <h3>Frontend Development</h3>
+            <div class="tech-tags">
+              <span>React.js</span><span>HTML5</span><span>CSS3</span
+              ><span>Responsive Web Design</span>
+            </div>
+          </div>
+          <div class="skills-category card-glass scroll-animate">
+            <h3>Backend Ecosystem</h3>
+            <div class="tech-tags">
+              <span>Spring Boot</span><span>Spring Framework</span
+              ><span>RESTful APIs</span><span>JDBC</span><span>Hibernate</span>
+            </div>
+          </div>
+        </div>
+        <div class="concepts-box card-glass scroll-animate text-center">
+          <h3>Core Architectural Competencies & Tools</h3>
+          <div class="concept-tags">
+            <span>OOP</span><span>MVC Architecture</span
+            ><span>Secure Authentication</span><span>System Debugging</span
+            ><span>Unit Testing</span><span>Postman Testing</span
+            ><span>Git & GitHub</span><span>VS Code</span><span>Eclipse</span
+            ><span>MySQL Workbench</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Ecosystems
+          </button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        </div>
+        <div class="projects-grid">
+          <div
+            class="project-card card-glass scroll-animate"
+            data-category="fullstack"
+          >
+            <div class="carousel-container">
+              <div class="carousel-slide placeholder-img">
+                <span>SmartBite Platform Blueprint</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SmartBite — Full-Stack Food System</h3>
+              <p>
+                An enterprise-grade online ecosystem supporting modern food
+                lifecycle handling, built following industry-standard MVC design
+                rules.
+              </p>
+              <div class="project-details-expand">
+                <strong>Key Engineering Implementations:</strong>
+                <ul>
+                  <li>
+                    Implemented an asynchronous client utilizing security logic
+                    loops with Email OTP registrations and login profiles.
+                  </li>
+                  <li>
+                    Engineered decoupled REST APIs governing structural queries
+                    for Restaurants, Food Menus, User Wishlists, and checkout
+                    baskets.
+                  </li>
+                  <li>
+                    Modeled a normalized MySQL transactional layout schema
+                    mapping relational database tables efficiently.
+                  </li>
+                </ul>
+              </div>
+              <div class="tech-tags">
+                <span>Java</span><span>Spring Boot</span><span>React.js</span
+                ><span>MySQL</span><span>REST APIs</span><span>JDBC</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Vigneshven"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="btn btn-sm btn-primary"
+                  >GitHub</a
+                >
+                <a
+                  href="https://smartbite-prod.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="btn btn-sm btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section section">
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="education-grid">
+          <div class="education-timeline card-glass scroll-animate">
+            <h3>Academic Background</h3>
+            <div class="edu-item">
+              <span class="edu-year">2020 - 2024</span>
+              <h4>B.Tech — Information Technology</h4>
+              <h5>Kingston Engineering College</h5>
+              <p class="cgpa-badge">CGPA: 8.5 / 10.0</p>
+            </div>
+          </div>
+          <div class="certifications-box card-glass scroll-animate">
+            <h3>Professional Training Credentials</h3>
+            <div class="cert-item">
+              <h4>Java Full Stack Development</h4>
+              <h5>QSpiders Training Institute</h5>
+              <p>
+                Completed intensive training covering Advanced Enterprise Java,
+                Spring Framework, Spring MVC, REST APIs, JDBC database
+                architectures, SQL engines, and React.js single-page
+                configurations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info card-glass scroll-animate">
+            <h3>Let's Collaborate</h3>
+            <p>
+              I am looking for full-time opportunities as a Software Engineer,
+              Java Backend Developer, or Frontend Developer. Let's build
+              something scalable together.
+            </p>
+            <div class="info-list">
+              <div class="info-item">
+                <strong>Email:</strong>
+                <a href="mailto:v.vignesh15109038@gmail.com"
+                  >v.vignesh15109038@gmail.com</a
+                >
+              </div>
+              <div class="info-item">
+                <strong>Phone:</strong>
+                <a href="tel:+919677774066">+91 9677774066</a>
+              </div>
+              <div class="info-item">
+                <strong>Location:</strong> Chennai, India
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container card-glass scroll-animate">
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  required
+                  placeholder="Vignesh V"
+                />
+                <span class="error-msg">Name is required</span>
+              </div>
+              <div class="form-group">
+                <label interpreter="none" for="form-email">Email</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  required
+                  placeholder="vignesh@example.com"
+                />
+                <span class="error-msg">Provide a valid email address</span>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea
+                  id="form-message"
+                  rows="4"
+                  required
+                  placeholder="Your message here..."
+                ></textarea>
+                <span class="error-msg">Message cannot be empty</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2026 Vignesh V. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to top" class="btn-icon">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
